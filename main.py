@@ -123,7 +123,7 @@ class Scraper():
             self.found_dates_today = False
             self.log_done = True
 
-        if timeInGhana > 1:
+        if timeInGhana.hour >= 1:
             self.log_done = False
 
     def no_date_log(self):
